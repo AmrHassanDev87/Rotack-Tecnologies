@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>روتاك تكنولوجي للتدريب</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.8;
+      background: #eeeff0;
+    }
+    header {
+      /* background: #007bff; */
+      background: #030507;
+    }
+    header img {
+      width: 120px;
+      margin-top: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+      box-shadow: 0 4px 12px rgba(29, 17, 200, 0.1);
+    }
+    .checkbox-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    .checkbox-group label {
+      font-weight: 500;
+    }
+    .list-group-item {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header class="bg-secondary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">روتاك تكنولوجي للتدريب</h1>
+      <img src="New folder/00e295ea-acab-4a69-9ade-60c01c129bf0.jpeg" alt="شعار المركز">
+      <p class="lead mt-3">مركز تدريب مهني معتمد من وزارة العمل</p>
+    </div>
+  </header>
+
+  <!-- نموذج التقديم -->
+  <section id="apply" class="container my-5">
+    <h2 class="text-center mb-4">📋 نموذج التقديم</h2>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">الاسم الكامل</label>
+        <input type="text" class="form-control" placeholder="اكتب اسمك هنا" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">السن</label>
+        <input type="number" class="form-control" placeholder="اكتب عمرك" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">رقم الموبايل</label>
+        <input type="tel" class="form-control" placeholder="01000000000" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">الرقم القومي</label>
+        <input type="number" class="form-control" placeholder="14 رقم" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">النوع</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="gender" value="male"> ذكر</label>
+          <label><input type="checkbox" name="gender" value="female"> أنثى</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">المؤهل الدراسي</label>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="degree" value="ثانوي"> ثانوي عام</label>
+          <label><input type="checkbox" name="degree" value="دبلوم"> دبلوم</label>
+          <label><input type="checkbox" name="degree" value="بكالوريوس"> بكالوريوس</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">المحافظة</label>
+        <input type="text" class="form-control" placeholder="اكتب محافظتك" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">المركز</label>
+        <input type="text" class="form-control" placeholder="اكتب المركز" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">تقديم</button>
+    </form>
+  </section>
+
+  <!-- باقي الأقسام -->
+  <section id="details" class="container my-5">
+    <h2 class="text-center mb-4">📚 تفاصيل الدراسة</h2>
+    <p>
+      مدة الدراسة: سنة كاملة، مقسمة إلى أربع مستويات.  
+      - <strong>المستويين الأول والثاني:</strong> 3 أيام أسبوعياً (يومين نظري + يوم عملي في معمل تحاليل).  
+      - <strong>المستويين الثالث والرابع:</strong> 4 أيام أسبوعياً (يومين نظري + يومين عملي داخل مستشفى).
+    </p>
+  </section>
+
+  <section id="certificates" class="container my-5">
+    <h2 class="text-center mb-4">📜 الشهادات والمميزات</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">شهادة معتمدة من وزارة العمل</li>
+          <li class="list-group-item">كارنيه مزاولة المهنة</li>
+          <li class="list-group-item">شهادة مكافحة العدوى</li>
+          <li class="list-group-item">شهادة دورة الإسعافات الأولية</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item">شهادة تدريب من معمل تحاليل مستوى اول و ثاني</li>
+          <li class="list-group-item">شهادة خبره من المستشفى مستوى ثالث و رابع</li>
+          <li class="list-group-item">تغيير المسمى الوظيفي</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="fees" class="container my-5">
+    <h2 class="text-center mb-4">💰 المصاريف</h2>
+    <p>
+      إجمالي المصاريف: <strong>12,000 جنيه</strong>، تُدفع على أقساط شهرية.  
+      يجب سداد <strong>6,000 جنيه</strong> مع كل مستويين.  
+    </p>
+  </section>
+
+  <section id="requirements" class="container my-5">
+    <h2 class="text-center mb-4">✅ شروط التقديم</h2>
+    <ul class="list-group">
+      <li class="list-group-item">المؤهل المطلوب: ثانوي عام أو دبلوم.</li>
+      <li class="list-group-item">دفع رسوم فتح ملف: 300 جنيه.</li>
+    </ul>
+  </section>
+
+  <section id="location" class="container my-5">
+    <h2 class="text-center mb-4">📍 العنوان</h2>
+    <p class="text-center">
+      المنيا – شلبي – شارع الأمن المركزي – بعد كلية الآداب خلف شركه الكهربه
+    </p>
+  </section>
+
+  <footer class="bg-secondary text-white text-center py-3">
+    <p>جميع الحقوق محفوظة © روتاك تكنولوجي للتدريب</p>
+  </footer>
+
+</body>
+</html>
